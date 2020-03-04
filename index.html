@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PunchBag| Lousy Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <!--bag-image -->
+      <div id="bag" :class="{burst:ended}"></div>
+
+      <!--  bag health -->
+      <div id="bag-health">
+        <div :style="{width: health + '%'}"></div>
+      </div>
+
+      <!-- End message -->
+      <div v-if="this.ended" class="fin">
+        <h4>
+          Okay I'm done, you win !
+        </h4>
+      </div>
+
+      <!--  Controls -->
+      <div id="controls">
+        <button class=" btn punch-btn" @click="punch" v-show="!ended">
+          Punch
+        </button>
+        <button class="btn restart-btn" @click="restart">
+          Restart
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

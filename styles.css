@@ -1,0 +1,63 @@
+body {
+  background: #20262e;
+  padding: 20px;
+  font-family: Helvetica;
+}
+
+#app {
+  background: #f0f0f0;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+
+#bag {
+  width: 200px;
+  height: 320px;
+  margin: 0 auto;
+  background: url(https://raw.githubusercontent.com/iamshaunjp/vuejs-playlist/lesson-13/img/bag.png)
+    center no-repeat;
+  background-size: 60%;
+}
+
+#bag-health {
+  width: 200px;
+  border: 2px solid #000;
+  border-radius: 10%;
+  margin: 0 auto 20px auto;
+}
+
+#bag-health div {
+  height: 15px;
+  background: crimson;
+}
+
+#bag.burst {
+  background: url(https://raw.githubusercontent.com/iamshaunjp/vuejs-playlist/lesson-13/img/bag-burst.png)
+    center no-repeat;
+  background-size: 60%;
+}
+
+#controls {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 10%;
+  padding: 3px 4px;
+}
+.punch-btn {
+  background: rgb(230, 90, 80);
+  color: #fff;
+}
+
+.restart-btn {
+  background: rgb(90, 88, 226);
+  color: #fff;
+}
+
+.fin {
+  width: 200px;
+  margin: 0 auto 10px;
+}
